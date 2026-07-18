@@ -1,5 +1,5 @@
 #![crate_name = "typemapvec"]
-use std::{any::{Any, TypeId}, collections::HashMap, ops::Deref};
+use std::{any::{Any, TypeId}, collections::HashMap};
 
 type VecMap = HashMap<TypeId, Box<dyn Any + 'static>>;
 
